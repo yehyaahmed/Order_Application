@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_255sdp"
+        android:layout_height="@dimen/_373sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/field_background_shape"
+        android:shadowColor="#000000"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/createAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:text="انشاء حساب"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#FF6F00"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/nameIv"
+        android:layout_width="@dimen/_19sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/nameEd"
+        app:layout_constraintTop_toTopOf="@+id/nameEd"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/nameEd"
+        android:layout_width="@dimen/_211sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:elevation="@dimen/_10sdp"
+        android:hint="اسم المستخدم"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="right"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountTv" />
+
+    <ImageView
+        android:id="@+id/phoneIv"
+        android:layout_width="@dimen/_19sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/phoneLoginEt"
+        app:layout_constraintTop_toTopOf="@+id/phoneLoginEt"
+        app:srcCompat="@drawable/phone" />
+
+    <EditText
+        android:id="@+id/phoneLoginEt"
+        android:layout_width="@dimen/_211sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:elevation="@dimen/_10sdp"
+        android:inputType="phone"
+        android:hint="رقم الجوال"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/nameEd" />
+
+    <ImageView
+        android:id="@+id/passwordIv"
+        android:layout_width="@dimen/_19sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/passwordLoginET"
+        app:layout_constraintTop_toTopOf="@+id/passwordLoginET"
+        app:srcCompat="@drawable/password" />
+
+    <EditText
+        android:id="@+id/passwordLoginET"
+        android:layout_width="@dimen/_211sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_weight="1"
+        android:elevation="@dimen/_10sdp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="كلمة المرور"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLoginEt" />
+
+    <TextView
+        android:id="@+id/createAccountBtnTV"
+        android:layout_width="@dimen/_234sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_weight="1"
+        android:elevation="@dimen/_10sdp"
+        android:background="@drawable/padding_btn"
+        android:text="انشاء حساب"
+        android:gravity="center"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginET" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

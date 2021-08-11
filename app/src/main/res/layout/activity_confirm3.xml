@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#292929"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_main" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="@dimen/_256sdp"
+        android:layout_height="@dimen/_287sdp"
+        android:background="@drawable/field_background_shape"
+        android:shadowColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:text="لتأكيد التغييرات على كلمة المرور"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#FF6F00"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:text="تم ارسال رسالة الى رقم جوالك"
+        android:fontFamily="@font/tajawal_regular"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="#FF6F00"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/boxNumber1"
+        android:layout_width="@dimen/_39sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginEnd="@dimen/_21sdp"
+        android:background="@drawable/boxbackground"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/boxNumber2" />
+
+    <EditText
+        android:id="@+id/boxNumber2"
+        android:layout_width="@dimen/_39sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/boxbackground"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/boxNumber1"
+        app:layout_constraintTop_toTopOf="@+id/boxNumber3" />
+
+    <EditText
+        android:id="@+id/boxNumber3"
+        android:layout_width="@dimen/_39sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/boxbackground"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/boxNumber2"
+        app:layout_constraintStart_toEndOf="@+id/boxNumber4"
+        app:layout_constraintTop_toTopOf="@+id/boxNumber4" />
+
+    <EditText
+        android:id="@+id/boxNumber4"
+        android:layout_width="@dimen/_39sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:background="@drawable/boxbackground"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/_203sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:background="@drawable/padding_btn"
+        android:gravity="center"
+        android:text="تأكيد"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/boxNumber2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_65sdp"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="center"
+        android:text="لم يصلني الكود ؟ "
+        android:textColor="#000000"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/sendAgainTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_65sdp"
+        android:fontFamily="@font/tajawal_bold"
+        android:gravity="center"
+        android:text=" أرسل مرة أخرى"
+        android:textColor="#000000"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

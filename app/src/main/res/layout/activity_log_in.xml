@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="ltr"
+    tools:context=".view.LogInActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/_256sdp"
+        android:layout_height="@dimen/_371sdp"
+        android:background="@drawable/field_background_shape"
+        android:elevation="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TextView
+        android:id="@+id/helloTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_78sdp"
+        android:layout_marginStart="@dimen/_78sdp"
+        android:text="مرحبا بك"
+        android:elevation="@dimen/_8sdp"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#FF6F00"
+        android:textSize="@dimen/_25sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/phoneIv"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:elevation="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneLoginEt"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/phoneLoginEt"
+        app:layout_constraintTop_toTopOf="@+id/phoneLoginEt"
+        app:srcCompat="@drawable/phone" />
+
+    <EditText
+        android:id="@+id/phoneLoginEt"
+        android:layout_width="@dimen/_211sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:elevation="@dimen/_8sdp"
+        android:gravity="right"
+        android:hint="رقم الجوال"
+        android:fontFamily="@font/tajawal_regular"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/helloTv" />
+
+    <ImageView
+        android:id="@+id/passwordIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordLoginET"
+        app:layout_constraintEnd_toEndOf="@+id/phoneIv"
+        app:layout_constraintStart_toStartOf="@+id/phoneIv"
+        app:layout_constraintTop_toTopOf="@+id/passwordLoginET"
+        app:srcCompat="@drawable/password" />
+
+    <EditText
+        android:id="@+id/passwordLoginET"
+        android:layout_width="@dimen/_211sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_33sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_weight="1"
+        android:elevation="@dimen/_8sdp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="كلمة المرور"
+        android:fontFamily="@font/tajawal_regular"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLoginEt" />
+
+    <TextView
+        android:id="@+id/forgetPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:elevation="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_169sdp"
+        android:text="نسيت كلمة المرور"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="#FF6F00"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginET"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginET" />
+
+    <TextView
+        android:id="@+id/loginBtn"
+        android:layout_width="@dimen/_231sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:text="تسجيل دخول"
+        android:elevation="@dimen/_8sdp"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:background="@drawable/padding_btn"
+        app:layout_constraintEnd_toEndOf="@+id/passwordIv"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/forgetPasswordTV" />
+
+    <TextView
+        android:id="@+id/createAccountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:elevation="@dimen/_8sdp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="ليس لديك حساب ؟ أنشئ حساب"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

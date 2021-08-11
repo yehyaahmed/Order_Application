@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="ltr"
+    tools:context=".view.ConfirmPhoneNumberActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_368sdp"
+        android:background="@drawable/field_background_shape"
+        android:shadowColor="#000000"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_117sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:srcCompat="@drawable/finish" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_21sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:text="شارفت على الانتهاء"
+        android:fontFamily="@font/tajawal_bold"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="#FF6F00"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="أدخل الكود"
+        android:elevation="@dimen/_10sdp"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#FF6F00"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <EditText
+            android:id="@+id/boxNumber6"
+            android:layout_width="@dimen/_39sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/boxbackground"
+            android:elevation="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/boxNumber5"
+            android:layout_width="@dimen/_39sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/boxbackground"
+            android:elevation="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/boxNumber4"
+            android:layout_width="@dimen/_39sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/boxbackground"
+            android:elevation="@dimen/_10sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/boxNumber3"
+            android:layout_width="@dimen/_39sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/boxbackground"
+            android:elevation="@dimen/_10sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/boxNumber2"
+            android:layout_width="@dimen/_39sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/boxbackground"
+            android:elevation="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/boxNumber1"
+            android:layout_width="@dimen/_39sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/boxbackground"
+            android:elevation="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirmPhoneNumberBtnTV"
+        android:layout_width="@dimen/_203sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_26sdp"
+        android:background="@drawable/padding_btn"
+        android:elevation="@dimen/_10sdp"
+        android:fontFamily="@font/tajawal_bold"
+        android:gravity="center"
+        android:text="تأكيد"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_56sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:text="لم يصلني الكود ؟ "
+        android:fontFamily="@font/tajawal_regular"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPhoneNumberBtnTV" />
+
+    <TextView
+        android:id="@+id/sendAgainTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:text=" أرسل مرة أخرى"
+        android:fontFamily="@font/tajawal_bold"
+        android:textColor="#000000"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPhoneNumberBtnTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
